@@ -39,30 +39,37 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container-luxury py-32 md:py-40">
-        <div className="max-w-2xl">
-          <h1 className="fade-in-section heading-display text-foreground mb-6">
-            Crafting Spaces
-            <br />
-            <span className="italic font-normal">of Timeless Elegance</span>
-          </h1>
+    <div className="relative container-luxury py-32 md:py-40">
+  <div className="max-w-2xl">
+    <h1 className="fade-in-section heading-display text-foreground mb-6">
+      Building the Future
+      <br />
+      <span className="italic font-normal">with Bamboo Bricks</span>
+    </h1>
 
-          <p className="fade-in-section text-refined max-w-lg mb-10" style={{ animationDelay: "0.2s" }}>
-            Bespoke interior design for discerning clients. We transform
-            environments into refined sanctuaries that reflect your
-            distinct vision.
-          </p>
+    <p
+      className="fade-in-section text-refined max-w-lg mb-10"
+      style={{ animationDelay: "0.2s" }}
+    >
+      High-performance bamboo bricks engineered for strength, durability,
+      and sustainability. A smarter alternative to traditional construction
+      materials — without compromising on aesthetics.
+    </p>
 
-          <div className="fade-in-section flex flex-col sm:flex-row gap-4" style={{ animationDelay: "0.4s" }}>
-            <a href="#portfolio" className="btn-luxury">
-              View Our Work
-            </a>
-            <a href="#contact" className="btn-outline-luxury">
-              Book Consultation
-            </a>
-          </div>
-        </div>
-      </div>
+    <div
+      className="fade-in-section flex flex-col sm:flex-row gap-4"
+      style={{ animationDelay: "0.4s" }}
+    >
+      <a href="#products" className="btn-luxury">
+        Explore Products
+      </a>
+      <a href="#contact" className="btn-outline-luxury">
+        Get a Quote
+      </a>
+    </div>
+  </div>
+</div>
+
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: "0.8s" }}>

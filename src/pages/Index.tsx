@@ -6,6 +6,10 @@ import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WhatWeOffer from "@/components/WhatWeOffer";
+import GetQuotePopup from "@/components/FloatingQuote";
+import IdeasByRoom from "@/components/IdeasByRoom";
+
 
 const Index = () => {
   return (
@@ -13,7 +17,10 @@ const Index = () => {
       <Header />
       <HeroSection />
       <AboutSection />
-      <PortfolioSection />
+      
+       <WhatWeOffer />
+       <IdeasByRoom />
+       <PortfolioSection />
       <ServicesSection />
       <WhyChooseUsSection />
       <ContactSection />

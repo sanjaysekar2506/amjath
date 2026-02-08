@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import logo from "@/assets/logo_2-removebg-preview.png"; 
+// or "../assets/logo.svg" if you’re not using aliases
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,12 +31,17 @@ const Header = () => {
     >
       <div className="container-luxury flex items-center justify-between">
         {/* Logo */}
-        <a
-          href="#"
-          className="font-serif text-xl md:text-2xl font-medium tracking-wide text-foreground"
-        >
-          Atelier Lumière
-        </a>
+       <a href="#" className="flex items-center gap-3">
+  <img
+     src={logo}
+    alt="Bambo Bricks logo"
+    className="h-10 md:h-14 w-auto"
+  />
+  <span className="font-serif text-xl md:text-2xl font-medium tracking-wide text-foreground">
+    Bamboo Bricks
+  </span>
+</a>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10">

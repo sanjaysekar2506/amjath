@@ -10,7 +10,7 @@ const Footer = () => {
             href="#"
             className="font-serif text-xl font-medium tracking-wide text-primary-foreground"
           >
-            Atelier Lumière
+            bamboo bricks
           </a>
 
           {/* Navigation */}

@@ -1,41 +1,43 @@
 import { useEffect, useRef } from "react";
-import portfolio1 from "@/assets/portfolio-1.jpg";
-import portfolio2 from "@/assets/portfolio-2.jpg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
-import portfolio4 from "@/assets/portfolio-4.jpg";
-import portfolio5 from "@/assets/portfolio-5.jpg";
-import portfolio6 from "@/assets/portfolio-6.jpg";
+import { Link } from "react-router-dom";
+
+import gallery1 from "../assets/gallery1.jpeg";
+import gallery2 from "../assets/gallery2.jpeg";
+import gallery3 from "../assets/gallery3.jpeg";
+import gallery4 from "../assets/gallery4.jpeg";
+import gallery5 from "../assets/gallery5.jpeg";
+import gallery6 from "../assets/gallery6.jpeg";
 
 const projects = [
   {
-    image: portfolio1,
-    title: "The Whitmore Residence",
-    category: "Private Residence",
+    image: gallery1,
+    title: "Single-Storey Bamboo Brick House",
+    category: "Residential Construction",
   },
   {
-    image: portfolio2,
-    title: "Serenity Suite",
-    category: "Boutique Hotel",
+    image: gallery2,
+    title: "Eco-Friendly Farmhouse Build",
+    category: "Rural Housing",
   },
   {
-    image: portfolio3,
-    title: "Modern Kitchen Design",
-    category: "Private Residence",
+    image: gallery3,
+    title: "Load-Bearing Bamboo Brick Walls",
+    category: "Structural Work",
   },
   {
-    image: portfolio4,
-    title: "The Library Collection",
-    category: "Private Study",
+    image: gallery4,
+    title: "Low-Cost Housing Project",
+    category: "Affordable Housing",
   },
   {
-    image: portfolio5,
-    title: "Spa Retreat",
-    category: "Wellness Center",
+    image: gallery5,
+    title: "Bamboo Brick Compound Wall",
+    category: "Boundary Construction",
   },
   {
-    image: portfolio6,
-    title: "The Grand Lobby",
-    category: "Commercial",
+    image: gallery6,
+    title: "Small Commercial Unit Using Bamboo Bricks",
+    category: "Commercial Construction",
   },
 ];
 
@@ -107,10 +109,14 @@ const PortfolioSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="fade-in-section text-center mt-16" style={{ animationDelay: "0.6s" }}>
-          <a href="#contact" className="btn-outline-luxury">
+        
+        <div
+          className="fade-in-section text-center mt-16"
+          style={{ animationDelay: "0.6s" }}
+        >
+          <Link to="/works" className="btn-outline-luxury">
             View All Projects
-          </a>
+          </Link>
         </div>
       </div>
     </section>
