@@ -1,44 +1,57 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import gallery1 from "../assets/gallery1.jpeg";
-import gallery2 from "../assets/gallery2.jpeg";
-import gallery3 from "../assets/gallery3.jpeg";
-import gallery4 from "../assets/gallery4.jpeg";
-import gallery5 from "../assets/gallery5.jpeg";
-import gallery6 from "../assets/gallery6.jpeg";
+import gallery1 from "../assets/gallery7.jpeg";
+import gallery2 from "../assets/gallery5.jpeg";
+import gallery3 from "../assets/gallery9.jpeg";
+import gallery4 from "../assets/gallery8.jpeg";
+// import gallery5 from "../assets/gallery5.jpeg";
+// import gallery6 from "../assets/gallery6.jpeg";
+
+/*
+slug MUST match folder name exactly inside:
+src/images/gallery/
+*/
 
 const projects = [
+    {
+    image: gallery3,
+    title: "shrinivas bangalore Project",
+    category: "Interior Work",
+    slug: "shrinivas bangalore", // already correct
+  },
   {
     image: gallery1,
-    title: "Single-Storey Bamboo Brick House",
-    category: "Residential Construction",
+    title: "Sanjay Chikmagalur Project",
+    category: "Interior Work",
+    slug: "Sanjay Chikmagalur", // ✅ exact match
   },
-  {
-    image: gallery2,
-    title: "Eco-Friendly Farmhouse Build",
-    category: "Rural Housing",
-  },
-  {
-    image: gallery3,
-    title: "Load-Bearing Bamboo Brick Walls",
-    category: "Structural Work",
-  },
+ 
+
   {
     image: gallery4,
-    title: "Low-Cost Housing Project",
-    category: "Affordable Housing",
+    title: "Sanjeev - bangalore Project",
+    category: "Interior Work",
+    slug: "Sanjeev - bangalore",
   },
-  {
-    image: gallery5,
-    title: "Bamboo Brick Compound Wall",
-    category: "Boundary Construction",
+   {
+    image: gallery2,
+    title: "Ajay Bangalore Project",
+    category: "Interior Work",
+    slug: "ajay - bangalore", // ✅ exact match
   },
-  {
-    image: gallery6,
-    title: "Small Commercial Unit Using Bamboo Bricks",
-    category: "Commercial Construction",
-  },
+  // {
+  //   image: gallery5,
+  //   title: "Partition Design",
+  //   category: "Interior Work",
+  //   slug: "partition design 1",
+  // },
+  // {
+  //   image: gallery6,
+  //   title: "Head Board Wall",
+  //   category: "Interior Work",
+  //   slug: "Head board wall design",
+  // },
 ];
 
 const PortfolioSection = () => {
@@ -56,7 +69,8 @@ const PortfolioSection = () => {
       { threshold: 0.1 }
     );
 
-    const elements = sectionRef.current?.querySelectorAll(".fade-in-section");
+    const elements =
+      sectionRef.current?.querySelectorAll(".fade-in-section");
     elements?.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
@@ -69,9 +83,8 @@ const PortfolioSection = () => {
       className="py-24 md:py-32 bg-background"
     >
       <div className="container-luxury">
-        {/* Header */}
         <div className="fade-in-section text-center mb-16 md:mb-20">
-          <span className="text-xs font-sans tracking-widest uppercase text-primary mb-4 block">
+          <span className="text-xs tracking-widest uppercase text-primary mb-4 block">
             Selected Work
           </span>
           <h2 className="heading-section text-foreground">
@@ -79,44 +92,36 @@ const PortfolioSection = () => {
           </h2>
         </div>
 
-        {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <article
+            <Link
               key={project.title}
-              className="fade-in-section group cursor-pointer"
+              to={`/gallery/${encodeURIComponent(project.slug)}`}
+              className="fade-in-section group block"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative aspect-[4/5] overflow-hidden bg-muted">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-foreground/0 transition-colors duration-500 group-hover:bg-foreground/10" />
-              </div>
-              <div className="pt-5">
-                <span className="text-xs font-sans tracking-widest uppercase text-muted-foreground block mb-1">
-                  {project.category}
-                </span>
-                <h3 className="font-serif text-lg text-foreground group-hover:text-primary transition-colors duration-300">
-                  {project.title}
-                </h3>
-              </div>
-            </article>
-          ))}
-        </div>
+              <article className="cursor-pointer">
+                <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-foreground/0 transition-colors duration-500 group-hover:bg-foreground/10" />
+                </div>
 
-        {/* CTA */}
-        
-        <div
-          className="fade-in-section text-center mt-16"
-          style={{ animationDelay: "0.6s" }}
-        >
-          <Link to="/works" className="btn-outline-luxury">
-            View All Projects
-          </Link>
+                <div className="pt-5">
+                  <span className="text-xs tracking-widest uppercase text-muted-foreground block mb-1">
+                    {project.category}
+                  </span>
+                  <h3 className="font-serif text-lg text-foreground group-hover:text-primary transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                </div>
+              </article>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

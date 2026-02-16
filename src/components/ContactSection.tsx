@@ -75,7 +75,7 @@ const ContactSection = () => {
                   Studio
                 </span>
                 <p className="font-sans text-foreground">
-                  42 Mayfair Lane, London W1K 6NB
+                  bangalore, india
                 </p>
               </div>
               <div>
@@ -86,7 +86,7 @@ const ContactSection = () => {
                   href="mailto:studio@atelierlumiere.com"
                   className="font-sans text-foreground hover:text-primary transition-colors"
                 >
-                  studio@atelierlumiere.com
+                  bamboobricks.design@gmail.com
                 </a>
               </div>
               <div>
@@ -97,14 +97,14 @@ const ContactSection = () => {
                   href="tel:+442071234567"
                   className="font-sans text-foreground hover:text-primary transition-colors"
                 >
-                  +44 (0) 20 7123 4567
+                 +91 831 072 1727
                 </a>
               </div>
             </div>
           </div>
 
           {/* Right Column - Form */}
-          <div className="fade-in-section" style={{ animationDelay: "0.2s" }}>
+          {/* <div className="fade-in-section" style={{ animationDelay: "0.2s" }}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
@@ -177,7 +177,7 @@ const ContactSection = () => {
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
