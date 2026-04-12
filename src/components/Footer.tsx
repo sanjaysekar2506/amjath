@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Copyright & Developer */}
           <div className="flex flex-col gap-3 text-xs items-center md:items-end">
             <p className="text-primary-foreground/50">
-              © {currentYear} test. All rights reserved.
+              © {currentYear} Bamboo Bricks. All rights reserved.
             </p>
 
           
