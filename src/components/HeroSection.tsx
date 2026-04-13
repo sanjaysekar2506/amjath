@@ -60,8 +60,8 @@ const HeroSection = () => {
       className="fade-in-section flex flex-col sm:flex-row gap-4"
       style={{ animationDelay: "0.4s" }}
     >
-      <a href="#products" className="btn-luxury">
-        Explore Products
+      <a href="#portfolio" className="btn-luxury">
+        Explore Designs
       </a>
       <a href="#contact" className="btn-outline-luxury">
         Get a Quote

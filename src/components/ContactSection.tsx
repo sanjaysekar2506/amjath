@@ -67,7 +67,7 @@ const ContactSection = () => {
               Every exceptional space begins with a conversation. We invite you
               to share your vision with us.
             </p>
-
+            
             {/* Contact Info */}
             <div className="space-y-4">
               <div>
@@ -89,6 +89,19 @@ const ContactSection = () => {
                   bamboobricks.design@gmail.com
                 </a>
               </div>
+              <div>
+  <span className="text-xs font-sans tracking-widest uppercase text-muted-foreground block mb-1">
+    Instagram
+  </span>
+  <a
+    href="https://www.instagram.com/bamboobricks.design"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-sans text-foreground hover:text-primary transition-colors"
+  >
+    @bamboobricks.design
+  </a>
+</div>
               <div>
                 <span className="text-xs font-sans tracking-widest uppercase text-muted-foreground block mb-1">
                   Telephone

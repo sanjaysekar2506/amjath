@@ -1,3 +1,5 @@
+
+import { ExternalLink } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -15,20 +17,33 @@ const Footer = () => {
               bamboo bricks
             </a>
           </div>
-            {/* 🔥 Highlighted Developer Section */}
-            <div className="px-4 py-2 border border-primary-foreground/20 rounded-md bg-primary-foreground/5">
-              <span className="uppercase tracking-wider text-[10px] text-primary-foreground/60 block">
-                Developed By
-              </span>
-              <a
-                href="https://sanportfolioo.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-primary hover:text-primary-foreground transition-colors"
-              >
-                sanportfolioo.netlify.app
-              </a>
-            </div>
+      
+
+<div className="px-4 py-3 border border-primary-foreground/20 rounded-md bg-primary-foreground/5 flex items-center justify-between gap-3">
+
+  {/* Text */}
+  <span className="uppercase tracking-wider text-[10px] text-primary-foreground/60">
+    Developed By
+  </span>
+
+  {/* Icon with tooltip */}
+  <div className="relative group">
+    <a
+      href="https://sanportfolioo.netlify.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white shadow-md transition-all duration-300 hover:scale-110 hover:shadow-xl"
+    >
+      <ExternalLink size={18} />
+    </a>
+
+    {/* Tooltip */}
+    <span className="absolute bottom-12 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs bg-black text-white px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-[-4px] transition-all duration-300 pointer-events-none">
+      View Developer Portfolio 👀
+    </span>
+  </div>
+
+</div>
           {/* Navigation */}
           <nav className="flex flex-col gap-4 md:flex-row md:gap-8">
             <a

@@ -6,7 +6,7 @@ import { useMemo } from "react";
   Works because images are inside src/images/gallery
 */
 const allImages = import.meta.glob(
-  "../images/gallery/**/*.{jpg,jpeg,png,webp}",
+  "/src/images/gallery/**/*.{jpg,jpeg,png,webp}",
   { eager: true }
 );
 
@@ -25,7 +25,7 @@ const IdeasByRoom = () => {
 
     Object.entries(allImages).forEach(([path, mod]: any) => {
       // extract folder name from path
-      const match = path.match(/gallery\/([^/]+)\//);
+      const match = path.match(/rooms\/([^/]+)\//);
       if (!match) return;
 
       const slug = match[1];
@@ -47,7 +47,7 @@ const IdeasByRoom = () => {
   }, []);
 
   return (
-    <section className="py-10 bg-[#f5efe6]">
+    <section id="ideas" className="py-16 bg-[#f5efe6] relative z-10">
       <div className="px-4">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">
           Discover Ideas By Room

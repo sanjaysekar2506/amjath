@@ -44,17 +44,12 @@ const AboutSection = () => {
           {/* Right Column */}
           <div className="fade-in-section" style={{ animationDelay: "0.2s" }}>
             <p className="text-refined mb-6">
-              I am a freelance construction professional specializing in bamboo
-              brick solutions for sustainable and cost-effective building.
-              With hands-on industry experience, I help clients adopt bamboo-focused
-              construction without compromising on strength or reliability.
+              Bambooo Bricks Interior Studio crafts warm, nature-inspired interiors where sustainable materials meet contemporary elegance. We transform spaces with bamboo's grace, brick's strength, and design that feels personal and timeless.
             </p>
 
             <p className="text-refined mb-8">
-              Over the years, I have worked closely with homeowners, builders,
-              and small developers — guiding projects from material selection
-              to on-site execution, ensuring bamboo bricks are used correctly
-              and efficiently.
+              Bamboo Bricks Interior Studio creates thoughtful, elegant interiors that balance beauty, comfort, and function for modern homes and workspaces.
+At Bamboo Bricks Interior Studio, we believe interiors should feel personal, practical, and timeless. We work closely with every client to create spaces that reflect their lifestyle while elevating everyday living.
             </p>
 
             {/* Stats */}

@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import gallery1 from "../assets/gallery7.jpeg";
-import gallery2 from "../assets/gallery5.jpeg";
-import gallery3 from "../assets/gallery9.jpeg";
-import gallery4 from "../assets/gallery8.jpeg";
+import gallery1 from "../images/gallery/projects/shrinivas-bangalore/IMG_20251123_130137936.jpg";
+import gallery2 from "../images/gallery/projects/sanjay-chikmagalur/IMG-20260208-WA0071.jpg";
+import gallery3 from "../images/gallery/projects/sanjeev-bangalore/09b46e9551224e91b18bb6e0caac970f.jpg";
+import gallery4 from "../images/gallery/projects/ajay-bangalore/IMG-20260122-WA0085.jpg";
 // import gallery5 from "../assets/gallery5.jpeg";
 // import gallery6 from "../assets/gallery6.jpeg";
 
@@ -15,30 +15,30 @@ src/images/gallery/
 
 const projects = [
     {
-    image: gallery3,
+    image: gallery1,
     title: "shrinivas bangalore Project",
     category: "Interior Work",
-    slug: "shrinivas bangalore", // already correct
+    slug: "shrinivas-bangalore", // already correct
   },
   {
-    image: gallery1,
+    image: gallery2,
     title: "Sanjay Chikmagalur Project",
     category: "Interior Work",
-    slug: "Sanjay Chikmagalur", // ✅ exact match
+    slug: "sanjay-chikmagalur", // ✅ exact match
   },
  
 
   {
-    image: gallery4,
-    title: "Sanjeev - bangalore Project",
+    image: gallery3,
+    title: "Sanjeev-bangalore Project",
     category: "Interior Work",
-    slug: "Sanjeev - bangalore",
+    slug: "sanjeev-bangalore",
   },
    {
-    image: gallery2,
+    image: gallery4,
     title: "Ajay Bangalore Project",
     category: "Interior Work",
-    slug: "ajay - bangalore", // ✅ exact match
+    slug: "ajay-bangalore", // ✅ exact match
   },
   // {
   //   image: gallery5,
