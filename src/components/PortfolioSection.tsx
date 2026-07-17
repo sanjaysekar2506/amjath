@@ -5,7 +5,8 @@ import gallery1 from "../images/gallery/projects/shrinivas-bangalore/IMG_2025112
 import gallery2 from "../images/gallery/projects/sanjay-chikmagalur/IMG-20260208-WA0071.jpg";
 import gallery3 from "../images/gallery/projects/sanjeev-bangalore/09b46e9551224e91b18bb6e0caac970f.jpg";
 import gallery4 from "../images/gallery/projects/ajay-bangalore/IMG-20260122-WA0085.jpg";
-// import gallery5 from "../assets/gallery5.jpeg";
+
+import gallery5 from "../images/gallery/projects/vishnu-bangalore/WhatsApp Image 2026-07-12 at 9.58.08 PM.jpeg";
 // import gallery6 from "../assets/gallery6.jpeg";
 
 /*
@@ -40,12 +41,12 @@ const projects = [
     category: "Interior Work",
     slug: "ajay-bangalore", // ✅ exact match
   },
-  // {
-  //   image: gallery5,
-  //   title: "Partition Design",
-  //   category: "Interior Work",
-  //   slug: "partition design 1",
-  // },
+  {
+    image: gallery5,
+    title: "vishnu-bangalore",
+    category: "Interior Work",
+    slug: "vishnu-bangalore", // ✅ exact match
+  },
   // {
   //   image: gallery6,
   //   title: "Head Board Wall",
